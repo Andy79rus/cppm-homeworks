@@ -21,20 +21,20 @@ void shift_left(int* arr, int size)
 
 bool check_data_in_file(std::string file)
 {
-	std::ifstream file_to_use(file);
+	std::ifstream file_to_read(file);
 	std::string current_str;
 
 	bool file_is_ok = true;
 
-	if (!file_to_use.is_open())
+	if (!file_to_read.is_open())
 		{
 			std::cout << "Невозможно открыть файл. Файл не найден." << std::endl;
 		}
 	else
 		{
-			while (!file_to_use.eof())
+			while (!file_to_read.eof())
 				{
-					file_to_use >> current_str;
+					file_to_read >> current_str;
 					//Проверяем, что в символьной строке только цифры
 					std::regex reg("^[0-9]{1,10}$");
 					if (!(std::regex_match(current_str, reg)))
@@ -55,34 +55,34 @@ int main()
 
 	if (check_data_in_file(filename1))
 	{
-		std::ifstream file_to_use(filename1);
+		std::ifstream file_to_read(filename1);
 
-		if (!file_to_use.is_open())
+		if (!file_to_read.is_open())
 		{
 			std::cout << "Невозможно открыть файл. Файл не найден." << std::endl;
 		}
 		else
 		{
 			std::string current_str;
-			file_to_use >> current_str;
+			file_to_read >> current_str;
 			int size1 = std::stoi(current_str);
 			int* arr1 = new int[size1];
 			for (int i = 0; i < size1; ++i)
 			{
-				file_to_use >> current_str;
+				file_to_read >> current_str;
 				arr1[i] = std::stoi(current_str);
 			}
 
-			file_to_use >> current_str;
+			file_to_read >> current_str;
 			int size2 = std::stoi(current_str);
 			int* arr2 = new int[size2];
 			for (int i = 0; i < size2; ++i)
 			{
-				file_to_use >> current_str;
+				file_to_read >> current_str;
 				arr2[i] = std::stoi(current_str);
 			}
 
-			file_to_use.close();
+			file_to_read.close();
 
 			shift_right(arr2, size2);
 			shift_left(arr1, size1);
