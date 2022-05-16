@@ -40,6 +40,7 @@ bool check_data_in_file(std::string file)
 					std::regex reg("^[0-9]{1,10}$");
 					if (!(std::regex_match(current_str, reg)))
 						{
+							std::cout << "Неправильные данные в файле" << std::endl;
 							return false;
 						}
 
@@ -114,7 +115,6 @@ int main()
 		}
 
 	}
-	else std::cout << "Неправильные данные в файле" << std::endl;
 
 	return 0;
 }
