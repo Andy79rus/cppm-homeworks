@@ -33,9 +33,8 @@ bool check_data_in_file(std::string file)
 		}
 	else
 		{
-			while (!file_to_read.eof())
+			while (file_to_read >> current_str)
 				{
-					file_to_read >> current_str;
 					//Проверяем, что в символьной строке только цифры
 					std::regex reg("^[0-9]{1,10}$");
 					if (!(std::regex_match(current_str, reg)))
@@ -43,7 +42,6 @@ bool check_data_in_file(std::string file)
 							std::cout << "Неправильные данные в файле" << std::endl;
 							return false;
 						}
-
 				}
 			file_to_read.close();
 		}
