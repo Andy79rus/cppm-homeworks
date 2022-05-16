@@ -113,7 +113,6 @@ int main()
 			arr1 = nullptr;
 			arr2 = nullptr;
 		}
-
 	}
 
 	return 0;
