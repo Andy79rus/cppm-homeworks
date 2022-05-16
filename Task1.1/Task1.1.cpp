@@ -29,6 +29,7 @@ bool check_data_in_file(std::string file)
 	if (!file_to_read.is_open())
 		{
 			std::cout << "Невозможно открыть файл. Файл не найден." << std::endl;
+			file_is_ok = false;
 		}
 	else
 		{
@@ -43,6 +44,7 @@ bool check_data_in_file(std::string file)
 						}
 
 				}
+			file_to_read.close();
 		}
 
 	return file_is_ok;
