@@ -68,7 +68,7 @@ int main()
 			{
 				file_to_write << arr1[i] << " ";
 			}
-			file_to_write << arr1[size1 - 1] << std::endl;
+			file_to_write << arr1[size1 - 1];
 
 			file_to_write.close();
 
