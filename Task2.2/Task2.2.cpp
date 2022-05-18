@@ -14,7 +14,7 @@ void change_balance(Bank_account& ba)
     std::cin >> ba.amount;
 }
 
-void print_account(const Bank_account ba)
+void print_account(const Bank_account& ba)
 {
     std::cout << "Ваш счет: " << ba.name << ", " << ba.account << ", " << ba.amount << std::endl;
 }
