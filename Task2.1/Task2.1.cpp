@@ -16,7 +16,7 @@ enum months
     december
 };
 
-void print_month(months m)
+void print_month(const months m)
 {
     std::string month;
 
