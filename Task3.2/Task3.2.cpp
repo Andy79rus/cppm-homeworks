@@ -80,9 +80,9 @@ int main()
 	}
 	else // yesno == "нет"
 	{
-		std::cout << "Начальное значение счётчика (по умолчанию): 1" << std::endl;
-
 		Counter* Cntr = new Counter();
+
+		std::cout << "Начальное значение счётчика (по умолчанию): " << Cntr->getValue() << std::endl;
 
 		do
 		{
