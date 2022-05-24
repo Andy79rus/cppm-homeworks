@@ -55,30 +55,51 @@ int main()
 	} while (!((yesno == "да") || (yesno == "нет")));
 
 	int startnumber = 1;
+	char command = '0';
 
 	if (yesno == "да")
 	{
 		std::cout << "Введите начальное значение счётчика: ";
 		std::cin >> startnumber;
+
+		Counter Cntr(startnumber);
+
+		do
+		{
+			std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
+			std::cin >> command;
+			if (command == '+')
+				Cntr.incValue();
+			else if (command == '-')
+				Cntr.decValue();
+			else if (command == '=')
+				std::cout << Cntr.getValue() << std::endl;
+			else if ((command != 'x') && (command != 'х'))
+				std::cout << "Неверная комманда!" << std::endl;
+		} while ((command != 'x') && (command != 'х'));
 	}
-
-	Counter Cntr(startnumber);
-
-	char command = '0';
-
-	do
+	else // yesno == "нет"
 	{
-		std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
-		std::cin >> command;
-		if (command == '+')
-			Cntr.incValue();
-		else if (command == '-')
-			Cntr.decValue();
-		else if (command == '=')
-			std::cout << Cntr.getValue() << std::endl;
-		else if (command != 'x')
-			std::cout << "Неверная комманда!" << std::endl;
-	} while (command != 'x');
+		std::cout << "Начальное значение счётчика (по умолчанию): 1" << std::endl;
+
+		Counter* Cntr = new Counter();
+
+		do
+		{
+			std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
+			std::cin >> command;
+			if (command == '+')
+				Cntr->incValue();
+			else if (command == '-')
+				Cntr->decValue();
+			else if (command == '=')
+				std::cout << Cntr->getValue() << std::endl;
+			else if ((command != 'x') && (command != 'х'))
+				std::cout << "Неверная комманда!" << std::endl;
+		} while ((command != 'x') && (command != 'х'));
+
+		delete Cntr;
+	}
 
 	std::cout << "До свидания!" << std::endl;
 	
