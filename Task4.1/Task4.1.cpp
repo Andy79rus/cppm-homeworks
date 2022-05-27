@@ -68,7 +68,6 @@ int main()
 	SetConsoleOutputCP(1251);
 	setlocale(LC_ALL, "Russian");
 
-	int adress_count = 0;
 	std::string file_in = "in.txt";
 	std::string file_out = "out.txt";
 
