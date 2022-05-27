@@ -3,16 +3,16 @@
 #include <windows.h>
 #include <string>
 
-class Adress
+class Address
 {
 	public:
-		Adress()
+		Address()
 		{
 			set_house(0);
 			set_flat(0);
 		}
 
-		Adress(std::string c, std::string s, int h, int f)
+		Address(std::string c, std::string s, int h, int f)
 		{
 			set_city(c);
 			set_street(s);
@@ -20,7 +20,7 @@ class Adress
 			set_flat(f);
 		}
 
-		std::string print_adress()
+		std::string print_address()
 		{
 			std::string result = "";
 			result += this->City;
@@ -89,7 +89,7 @@ int main()
 		return 21;
 	}
 
-	Adress* arr1 = new Adress[size1];
+	Address* arr1 = new Address[size1];
 
 	for (int i = 0; i < size1; ++i)
 	{
@@ -111,7 +111,7 @@ int main()
 
 	for (int i = size1 - 1; i >= 0; --i)
 	{
-		file_to_write << (arr1 + i)->print_adress();
+		file_to_write << (arr1 + i)->print_address();
 	}
 
 	file_to_write.close();
