@@ -4,6 +4,9 @@
 class Figure
 {
 public:
+    Figure() : Figure(0)
+    {}
+
     void print_sides()
     {
         std::cout << "Стороны: ";
@@ -294,7 +297,6 @@ int main()
     rmb.print_name();
     rmb.print_sides();
     rmb.print_corners();
-    std::cout << std::endl;
 
     return 0;
 }
