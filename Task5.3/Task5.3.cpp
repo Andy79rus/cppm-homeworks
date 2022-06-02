@@ -352,7 +352,6 @@ public:
 protected:
     bool check() override
     {
-        if (!Quadrangle::check()) return false;
         if (!Rectangle::check()) return false;
         return true;
     }
@@ -392,7 +391,6 @@ public:
 protected:
     bool check() override
     {
-        if (!Quadrangle::check()) return false;
         if (!Parallelogram::check())
         {
             const int* c = this->get_corners();
