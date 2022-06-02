@@ -410,31 +410,34 @@ int main()
     Figure f;
     f.print_info();
 
-    Triangle tri(33, 45, 11, 26, 68, 94);
+    Triangle tri(11, 20, 30, 50, 60, 70);
     tri.print_info();
 
-    Right_Triangle rtri(20, 12, 26, 40, 50);
-    rtri.print_info();
+    Right_Triangle rtri1(11, 20, 30, 50, 60);
+    rtri1.print_info();
 
-    Isosceles_Triangle itri(27, 12, 40, 100);
+    Right_Triangle rtri2(11, 20, 30, 50, 40);
+    rtri2.print_info();
+
+    Isosceles_Triangle itri(10, 20, 50, 60);
     itri.print_info();
 
-    Equilateral_Triangle etri(15);
+    Equilateral_Triangle etri(30);
     etri.print_info();
 
-    Quadrangle quad(14, 15, 16, 17, 30, 40, 50, 60);
+    Quadrangle quad(10, 20, 30, 40, 50, 60, 70, 80);
     quad.print_info();
 
-    class Rectangle rt(20, 30);
+    class Rectangle rt(10, 20);
     rt.print_info();
 
-    Square sqr(8);
+    Square sqr(20);
     sqr.print_info();
 
-    Parallelogram plgm(10, 31, 140, 30);
+    Parallelogram plgm(20, 30, 30, 40);
     plgm.print_info();
 
-    Rhombus rmb(10, 40, 140);
+    Rhombus rmb(30, 30, 150);
     rmb.print_info();
 
     return 0;
