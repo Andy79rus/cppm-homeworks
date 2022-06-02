@@ -328,13 +328,14 @@ protected:
     {
         if (!Quadrangle::check()) return false;
         // Правильность равенства противоположных сторон задается в конструкторе, в проверке нет необходимости.
-        /* Формально, проверять углы не надо, так как они задаеются в конструкторе Quadrangle равные 90
-        const int* c = this->get_corners();
-        int c_count = this->get_sides_count();
-        for (int i = 0; i < c_count; ++i)
-        {
-            if (90 != *(c + i)) return false; // Проверяем, что углы равны 90
-        }
+        /* 
+            Формально, проверять углы не надо, так как они задаеются в конструкторе Quadrangle равные 90
+            const int* c = this->get_corners();
+            int c_count = this->get_sides_count();
+            for (int i = 0; i < c_count; ++i)
+                {
+                if (90 != *(c + i)) return false; // Проверяем, что углы равны 90
+                }
         */
         return true;
     }
@@ -372,9 +373,8 @@ protected:
         if (!Quadrangle::check()) return false;
         // Правильность равенства противоположных сторон задается в конструкторе, в проверке нет необходимости.
         // Правильность равенства противоположных углов задается в конструкторе, в проверке нет необходимости.
-        const int* s = this->get_sides();
         const int* c = this->get_corners();
-        if ((*s == *(s+1)) || (*c == *(c+1))) return false; // Проверяем, что длины соседних сторон или углов не равны, иначе прямоугольник/ромб/квадрат.
+        if (*c == *(c+1)) return false; // Проверяем, что углы не равны, иначе прямоугольник/квадрат.
         return true;
     }
 };
@@ -391,11 +391,12 @@ public:
 protected:
     bool check() override
     {
-        if (!Parallelogram::check())
-        {
-            const int* c = this->get_corners();
-            if ((*c == *(c+1))) return false; // Проверяем, что соседние углы не равны 360/4=90, иначе квадрат (хотя квадрат это частный случай ромба)
-        }
+        if (!Parallelogram::check()) return false;
+        /* 
+           Проверяем, что соседние углы не равны 360 / 4 = 90, иначе это квадрат(хотя квадрат это частный случай ромба)
+           const int* c = this->get_corners();
+           if ((*c == *(c+1))) return false; 
+        */
         return true;
     }
 };
@@ -430,10 +431,10 @@ int main()
     Square sqr(8);
     sqr.print_info();
 
-    Parallelogram plgm(10, 31, 140, 40);
+    Parallelogram plgm(10, 31, 140, 30);
     plgm.print_info();
 
-    Rhombus rmb(10, 30, 140);
+    Rhombus rmb(10, 40, 140);
     rmb.print_info();
 
     return 0;
