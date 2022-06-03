@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-// фигура(количество сторон = 0)
+ // фигура(количество сторон = 0)
 class Figure
 {
 public:
