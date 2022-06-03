@@ -1,30 +1,30 @@
 #include "math_functions.h"
 #include <iostream>
 
-void add(int a, int b)
+int add(int a, int b)
 {
-	std::cout << a << " плюс " << b << " равно " << a+b << std::endl;
+	return a+b;
 }
 
-void subtract(int a, int b)
+int subtract(int a, int b)
 {
-	std::cout << a << " минус " << b << " равно " << a-b << std::endl;
+	return  a-b;
 }
 
-void multiply(int a, int b)
+int multiply(int a, int b)
 {
-	std::cout << a << " умножить на " << b << " равно " << a*b << std::endl;
+	return a*b;
 }
 
-void divide(int a, int b)
+double divide(int a, int b)
 {
-	std::cout << a << " поделить на " << b << " равно " << static_cast<double>(a)/b << std::endl;
+	return static_cast<double>(a)/b;
 }
 
-void powerof(int a, int b)
+int powerof(int a, int b)
 {
 	int result = a;
 	for (int i = 1; i < b; ++i)
 		result *= a;
-	std::cout << a << " в степени " << b << " равно " << result << std::endl;
+	return result;
 }

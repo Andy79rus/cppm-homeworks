@@ -21,17 +21,17 @@ int main()
 	std::cin >> answer;
 	switch (answer)
 	{
-		case 1: add(n1, n2);
+	case 1: std::cout << n1 << " плюс " << n2 << " равно " << add(n1, n2) << std::endl;
 			break;
-		case 2: subtract(n1, n2);
+	case 2: std::cout << n1 << " минус " << n2 << " равно " << subtract(n1, n2) << std::endl;
 			break;
-		case 3: multiply(n1, n2);
+	case 3: std::cout << n1 << " умножить на " << n2 << " равно " << multiply(n1, n2) << std::endl;
 			break;
-		case 4: divide(n1, n2);
+	case 4: std::cout << n1 << " поделить на " << n2 << " равно " << divide(n1, n2) << std::endl;
 			break;
-		case 5: powerof(n1, n2);
+	case 5: std::cout << n1 << " в степени " << n2 << " равно " << powerof(n1, n2) << std::endl;
 			break;
-		default: 
+	default: 
 			std::cout << "Неправильная операция" << std::endl;
 			break;
 	}
