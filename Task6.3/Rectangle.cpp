@@ -1,6 +1,6 @@
 #include "Rectangle.h"
 
- // прямоугольник (стороны a,c и b,d попарно равны, все углы равны 90)
+// прямоугольник (стороны a,c и b,d попарно равны, все углы равны 90)
 Rectangle::Rectangle(int ac, int bd) : Quadrangle(ac, bd, ac, bd, 90, 90, 90, 90)
     {
         set_name("Прямоугольник");

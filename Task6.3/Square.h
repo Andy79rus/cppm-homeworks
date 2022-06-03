@@ -1,7 +1,7 @@
 #pragma once
 #include "Rectangle.h"
 
- // квадрат (все стороны равны, все углы равны 90)
+// квадрат (все стороны равны, все углы равны 90)
 class Square : public Rectangle
 {
 public:
