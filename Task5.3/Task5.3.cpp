@@ -156,6 +156,16 @@ protected:
         return true;    
     }
 
+    const int* get_sides() override
+    {
+        return this->side_abc;
+    }
+
+    const int* get_corners() override
+    {
+        return this->corner_ABC;
+    }
+
 private:
     void set_sides_abc(int a, int b, int c)
     {
@@ -169,16 +179,6 @@ private:
         this->corner_ABC[0] = A;
         this->corner_ABC[1] = B;
         this->corner_ABC[2] = C;
-    }
-
-    const int* get_sides() override
-    {
-        return this->side_abc;
-    }
-
-    const int* get_corners() override
-    {
-        return this->corner_ABC;
     }
 
     int tri = 3;
@@ -199,7 +199,7 @@ private:
     bool check() override
     {
         if (!Triangle::check()) return false;
-        // Формально, проверять угол С не надо, так как они задаеются в конструкторе Triangle равным 90
+        // Формально, проверять угол С не надо, так как они задаются в конструкторе Triangle равным 90
         return true;
     }
 };
@@ -217,7 +217,7 @@ private:
     bool check() override
     {
         if (!Triangle::check()) return false;
-        // Формально, проверять равенство сторон a и с, равенство углов A и C не надо, так как они задаеются в конструкторе Triangle равными
+        // Формально, проверять равенство сторон a и с, равенство углов A и C не надо, так как они задаются в конструкторе Triangle равными
         return true;
     }
 };
@@ -235,7 +235,7 @@ private:
     bool check() override
     {
         if (!Triangle::check()) return false;
-        // Формально, проверять равенство сторон и равенство углов не надо, так как они задаеются в конструкторе Triangle равными
+        // Формально, проверять равенство сторон и равенство углов не надо, так как они задаются в конструкторе Triangle равными
         return true;
     }
 };
@@ -264,16 +264,6 @@ public:
     }
 
 protected:
-    const int* get_sides() override
-    {
-        return this->side_abcd;
-    }
-
-    const int* get_corners() override
-    {
-        return this->corner_ABCD;
-    }
-
     bool check() override
     {
         const int* s = this->get_sides();
@@ -291,6 +281,16 @@ protected:
         }
         if (360 != corners_sum) return false; // Проверяем, что сумма углов фигуры равна 360.
         return true;        
+    }
+
+    const int* get_sides() override
+    {
+        return this->side_abcd;
+    }
+
+    const int* get_corners() override
+    {
+        return this->corner_ABCD;
     }
 
 private:
@@ -329,7 +329,7 @@ protected:
         if (!Quadrangle::check()) return false;
         // Правильность равенства противоположных сторон задается в конструкторе, в проверке нет необходимости.
         /* 
-            Формально, проверять углы не надо, так как они задаеются в конструкторе Quadrangle равные 90
+            Формально, проверять углы не надо, так как они задаются в конструкторе Quadrangle равные 90
             const int* c = this->get_corners();
             int c_count = this->get_sides_count();
             for (int i = 0; i < c_count; ++i)
