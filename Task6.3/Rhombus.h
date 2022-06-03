@@ -1,7 +1,7 @@
 #pragma once
 #include "Parallelogram.h"
 
-// ромб (все стороны равны, углы A,C и B,D попарно равны)
+// СЂРѕРјР± (РІСЃРµ СЃС‚РѕСЂРѕРЅС‹ СЂР°РІРЅС‹, СѓРіР»С‹ A,C Рё B,D РїРѕРїР°СЂРЅРѕ СЂР°РІРЅС‹)
 class Rhombus : public Parallelogram
 {
 public:

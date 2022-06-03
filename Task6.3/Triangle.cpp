@@ -1,13 +1,13 @@
 #include "Triangle.h"
 
-// треугольник (стороны и углы произвольные, количество сторон = 3, сумма углов = 180)
+// С‚СЂРµСѓРіРѕР»СЊРЅРёРє (СЃС‚РѕСЂРѕРЅС‹ Рё СѓРіР»С‹ РїСЂРѕРёР·РІРѕР»СЊРЅС‹Рµ, РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ = 3, СЃСѓРјРјР° СѓРіР»РѕРІ = 180)
 Triangle::Triangle(int a, int b, int c, int A, int B, int C) : Figure(tri)
     {
         set_sides_abc(a, b, c);
         set_corners_ABC(A, B, C);
         set_corners_count(tri);
         set_sides_count(tri);
-        set_name("Треугольник");
+        set_name("РўСЂРµСѓРіРѕР»СЊРЅРёРє");
     }
 
 void Triangle::print_info()
@@ -26,9 +26,9 @@ bool Triangle::check()
         int s_count = this->get_sides_count();
         for (int i = 0; i < s_count; ++i)
         {
-            if (*(s + i) <= 0) return false; // Проверяем, что длины сторон больше нуля.
+            if (*(s + i) <= 0) return false; // РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РґР»РёРЅС‹ СЃС‚РѕСЂРѕРЅ Р±РѕР»СЊС€Рµ РЅСѓР»СЏ.
         }
-        // Cумма длин любых двух сторон должна быть строго больше длинны третей стороны.
+        // CСѓРјРјР° РґР»РёРЅ Р»СЋР±С‹С… РґРІСѓС… СЃС‚РѕСЂРѕРЅ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ СЃС‚СЂРѕРіРѕ Р±РѕР»СЊС€Рµ РґР»РёРЅРЅС‹ С‚СЂРµС‚РµР№ СЃС‚РѕСЂРѕРЅС‹.
         if ((*s >= *(s + 1) + *(s + 2)) || (*(s + 1) >= *s + *(s + 2)) || (*(s + 2) >= *s + *(s + 1))) return false;
         const int* c = this->get_corners();
         int c_count = this->get_sides_count();
@@ -37,7 +37,7 @@ bool Triangle::check()
         {
             corners_sum += *(c + i);
         }
-        if (180 != corners_sum) return false; // Проверяем, что сумма углов фигуры равна 180.
+        if (180 != corners_sum) return false; // РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ СЃСѓРјРјР° СѓРіР»РѕРІ С„РёРіСѓСЂС‹ СЂР°РІРЅР° 180.
         return true;
     }
 

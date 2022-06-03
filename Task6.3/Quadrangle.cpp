@@ -1,13 +1,13 @@
 #include "Quadrangle.h"
 
-// четырёхугольник (стороны и углы произвольные, количество сторон = 4, сумма углов = 360)
+// С‡РµС‚С‹СЂС‘С…СѓРіРѕР»СЊРЅРёРє (СЃС‚РѕСЂРѕРЅС‹ Рё СѓРіР»С‹ РїСЂРѕРёР·РІРѕР»СЊРЅС‹Рµ, РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ = 4, СЃСѓРјРјР° СѓРіР»РѕРІ = 360)
 Quadrangle::Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D) : Figure(quad)
     {
         set_sides_abcd(a, b, c, d);
         set_corners_ABCD(A, B, C, D);
         set_corners_count(quad);
         set_sides_count(quad);
-        set_name("Четырехугольник");
+        set_name("Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє");
     }
 
 void Quadrangle::print_info()
@@ -26,7 +26,7 @@ bool Quadrangle::check()
         int s_count = this->get_sides_count();
         for (int i = 0; i < s_count; ++i)
         {
-            if (*(s + i) <= 0) return false; // Проверяем, что длины сторон больше нуля.
+            if (*(s + i) <= 0) return false; // РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РґР»РёРЅС‹ СЃС‚РѕСЂРѕРЅ Р±РѕР»СЊС€Рµ РЅСѓР»СЏ.
         }
         const int* c = this->get_corners();
         int c_count = this->get_sides_count();
@@ -35,7 +35,7 @@ bool Quadrangle::check()
         {
             corners_sum += *(c + i);
         }
-        if (360 != corners_sum) return false; // Проверяем, что сумма углов фигуры равна 360.
+        if (360 != corners_sum) return false; // РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ СЃСѓРјРјР° СѓРіР»РѕРІ С„РёРіСѓСЂС‹ СЂР°РІРЅР° 360.
         return true;
     }
 

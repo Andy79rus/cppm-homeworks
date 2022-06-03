@@ -1,9 +1,9 @@
 #include "Square.h"
 
-// квадрат (все стороны равны, все углы равны 90)
+// РєРІР°РґСЂР°С‚ (РІСЃРµ СЃС‚РѕСЂРѕРЅС‹ СЂР°РІРЅС‹, РІСЃРµ СѓРіР»С‹ СЂР°РІРЅС‹ 90)
 Square::Square(int abcd) : Rectangle(abcd, abcd)
     {
-        set_name("Квадрат");
+        set_name("РљРІР°РґСЂР°С‚");
     }
 
 bool  Square::check()
