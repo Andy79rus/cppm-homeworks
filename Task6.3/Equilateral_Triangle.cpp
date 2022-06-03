@@ -9,6 +9,6 @@ Equilateral_Triangle::Equilateral_Triangle(int abc) : Triangle(abc, abc, abc, 60
 bool Equilateral_Triangle::check()
     {
         if (!Triangle::check()) return false;
-        // Формально, проверять равенство сторон и равенство углов не надо, так как они задаютс¤ в конструкторе Triangle равными
+        // Формально, проверять равенство сторон и равенство углов не надо, так как они задаются в конструкторе Triangle равными
         return true;
     }

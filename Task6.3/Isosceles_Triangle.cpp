@@ -9,6 +9,6 @@ Isosceles_Triangle::Isosceles_Triangle(int ac, int b, int AC, int B) : Triangle(
 bool Isosceles_Triangle::check()
     {
         if (!Triangle::check()) return false;
-        // Формально, проверять равенство сторон a и с, равенство углов A и C не надо, так как они задаютс¤ в конструкторе Triangle равными
+        // Формально, проверять равенство сторон a и с, равенство углов A и C не надо, так как они задаются в конструкторе Triangle равными
         return true;
     }
