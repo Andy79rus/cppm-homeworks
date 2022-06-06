@@ -1,4 +1,4 @@
-﻿#include "Figure.h"
+#include "Figure.h"
 #include <iostream>
 
 // фигура(количество сторон = 0)

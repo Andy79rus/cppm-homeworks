@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "Triangle.h"
 
 // прямоугольный треугольник (угол C всегда равен 90)

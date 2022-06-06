@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "Triangle.h"
 
 // треугольник (стороны и углы произвольные, количество сторон = 3, сумма углов = 180)

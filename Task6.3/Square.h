@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "Rectangle.h"
 
 // квадрат (все стороны равны, все углы равны 90)

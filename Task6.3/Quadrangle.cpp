@@ -1,4 +1,4 @@
-﻿#include "Quadrangle.h"
+#include "Quadrangle.h"
 
 // четырёхугольник (стороны и углы произвольные, количество сторон = 4, сумма углов = 360)
 Quadrangle::Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D) : Figure(quad)

@@ -1,4 +1,4 @@
-﻿#include "Parallelogram.h"
+#include "Parallelogram.h"
 
 // параллелограмм (стороны a,c и b,d попарно равны, углы A,C и B,D попарно равны)
 Parallelogram::Parallelogram(int ac, int bd, int AC, int BD) : Quadrangle(ac, bd, ac, bd, AC, BD, AC, BD)

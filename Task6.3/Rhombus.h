@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "Parallelogram.h"
 
 // ромб (все стороны равны, углы A,C и B,D попарно равны)

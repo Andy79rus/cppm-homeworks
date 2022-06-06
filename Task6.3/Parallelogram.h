@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "Quadrangle.h"
 
 // параллелограмм (стороны a,c и b,d попарно равны, углы A,C и B,D попарно равны)

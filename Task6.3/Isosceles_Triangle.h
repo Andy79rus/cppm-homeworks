@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "Triangle.h"
 
 // равнобедренный треугольник (стороны a и c равны, углы A и C равны)
