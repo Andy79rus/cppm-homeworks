@@ -13,9 +13,9 @@
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+    setlocale(LC_ALL, "ru_RU.UTF-8");
 
     Figure f;
     f.print_info();
