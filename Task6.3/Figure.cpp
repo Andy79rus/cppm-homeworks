@@ -1,6 +1,7 @@
 #include "Figure.h"
+#include <iostream>
 
-// Ñ„Ğ¸Ğ³ÑƒÑ€Ğ°(ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑÑ‚Ğ¾Ñ€Ğ¾Ğ½ = 0)
+// ôèãóğà(êîëè÷åñòâî ñòîğîí = 0)
 Figure::Figure() : Figure(0)
     {}
 
@@ -16,29 +17,29 @@ Figure::Figure(int n)
     {
         set_sides_count(n);
         set_corners_count(n);
-        set_name("Ğ¤Ğ¸Ğ³ÑƒÑ€Ğ°");
+        set_name("Ôèãóğà");
     }
 
 bool Figure::check()
     {
-        return true; // Ğ±Ğ°Ğ·Ğ¾Ğ²Ğ°Ñ Ñ„Ğ¸Ğ³ÑƒÑ€Ğ° Ğ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ğ°Ñ Ğ¿Ğ¾-ÑƒĞ¼Ğ¾Ğ»Ñ‡Ğ°Ğ½Ğ¸Ñ
+        return true; // áàçîâàÿ ôèãóğà ïğàâèëüíàÿ ïî-óìîë÷àíèş
     }
 
 void Figure::print_check()
     {
         std::string status;
-        (this->check()) ? status = "ĞŸÑ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ğ°Ñ" : status = "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ğ°Ñ";
+        (this->check()) ? status = "Ïğàâèëüíàÿ" : status = "Íåïğàâèëüíàÿ";
         std::cout << status << std::endl;
     }
 
 void Figure::print_sides_count()
     {
-        std::cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑÑ‚Ğ¾Ñ€Ğ¾Ğ½: " << this->get_sides_count() << std::endl;
+        std::cout << "Êîëè÷åñòâî ñòîğîí: " << this->get_sides_count() << std::endl;
     }
 
 void Figure::print_sides()
     {
-        std::cout << "Ğ¡Ñ‚Ğ¾Ñ€Ğ¾Ğ½Ñ‹: ";
+        std::cout << "Ñòîğîíû: ";
         for (int i = 0; i < this->get_sides_count(); ++i)
             std::cout << sidesName[i] << "=" << *(this->get_sides() + i) << " ";
         std::cout << std::endl;
@@ -46,7 +47,7 @@ void Figure::print_sides()
 
 void Figure::print_corners()
     {
-        std::cout << "Ğ£Ğ³Ğ»Ñ‹: ";
+        std::cout << "Óãëû: ";
         for (int i = 0; i < this->get_corners_count(); ++i)
             std::cout << cornersName[i] << "=" << *(this->get_corners() + i) << " ";
         std::cout << std::endl;

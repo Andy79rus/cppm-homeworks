@@ -1,7 +1,7 @@
 #pragma once
 #include "Triangle.h"
 
-// РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє (СѓРіРѕР» C РІСЃРµРіРґР° СЂР°РІРµРЅ 90)
+// прямоугольный треугольник (угол C всегда равен 90)
 class Right_Triangle : public Triangle
 {
 public:
