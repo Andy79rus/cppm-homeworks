@@ -1,12 +1,12 @@
-﻿#include <iostream>
+#include <iostream>
 #include "math_functions.h"
 #include <windows.h>
 
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-	setlocale(LC_ALL, "Russian");
+	SetConsoleCP(65001);
+	SetConsoleOutputCP(65001);
+	setlocale(LC_ALL, "ru_RU.UTF-8");
 
 	int n1 = 0;
 	int n2 = 0;
