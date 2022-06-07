@@ -37,23 +37,6 @@ void Figure::print_sides_count()
         std::cout << "Количество сторон: " << this->get_sides_count() << std::endl;
     }
 
-void Figure::print_sides()
-    {
-        std::cout << "Стороны: ";
-        for (int i = 0; i < this->get_sides_count(); ++i)
-            std::cout << sidesName[i] << "=" << *(this->get_sides() + i) << " ";
-        std::cout << std::endl;
-    }
-
-void Figure::print_corners()
-    {
-        std::cout << "Углы: ";
-        for (int i = 0; i < this->get_corners_count(); ++i)
-            std::cout << cornersName[i] << "=" << *(this->get_corners() + i) << " ";
-        std::cout << std::endl;
-
-    }
-
 void Figure::print_name()
     {
         std::cout << this->get_name() << ":" << std::endl;
@@ -87,14 +70,4 @@ void Figure::set_name(std::string s)
 std::string Figure::get_name()
     {
         return this->name;
-    }
-
-const int* Figure::get_sides()
-    {
-        return nullptr;
-    }
-
-const int* Figure::get_corners()
-    {
-        return nullptr;
     }

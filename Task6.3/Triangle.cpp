@@ -42,6 +42,23 @@ bool Triangle::check()
         return true;
     }
 
+void Triangle::print_sides()
+{
+    std::cout << "Стороны: ";
+    for (int i = 0; i < this->get_sides_count(); ++i)
+        std::cout << sidesName[i] << "=" << *(this->get_sides() + i) << " ";
+    std::cout << std::endl;
+}
+
+void Triangle::print_corners()
+{
+    std::cout << "Углы: ";
+    for (int i = 0; i < this->get_corners_count(); ++i)
+        std::cout << cornersName[i] << "=" << *(this->get_corners() + i) << " ";
+    std::cout << std::endl;
+
+}
+
 const int* Triangle::get_sides()
     {
         return this->side_abc;
