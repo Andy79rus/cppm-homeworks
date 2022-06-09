@@ -2,7 +2,7 @@
 #include <Windows.h>
 #include <cstdio>
 
-enum class ErrorCode { Succses = 0, BadLengthExceptionErrorCode, UnknownErrorCode };
+enum class ErrorCode { Success = 0, BadLengthExceptionErrorCode, UnknownErrorCode };
 
 class BadLengthException : public std::exception
 {
@@ -52,5 +52,5 @@ int main()
         std::cout << "Длина слова \"" << current_str << "\" равна " << current_length << std::endl;
     } while (true);
 
-    return static_cast<int>(ErrorCode::Succses);
+    return static_cast<int>(ErrorCode::Success);
 }
