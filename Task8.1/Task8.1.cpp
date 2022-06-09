@@ -7,7 +7,7 @@ enum class ErrorCode { Succses = 0, BadLengthExceptionErrorCode, UnknownErrorCod
 class BadLengthException : public std::exception
 {
 public:
-    const char* what() const override { return "Вы ввели слово запретной длины!"; }
+    const char* what() const override { return "Р’С‹ РІРІРµР»Рё СЃР»РѕРІРѕ Р·Р°РїСЂРµС‚РЅРѕР№ РґР»РёРЅС‹!"; }
 };
 
 int check_length(std::string str, int forbidden_length)
@@ -18,11 +18,11 @@ int check_length(std::string str, int forbidden_length)
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+    setlocale(LC_ALL, "ru-RU.UTF-8");
 
-    std::cout << "Введите запретную длину строки: ";
+    std::cout << "Р’РІРµРґРёС‚Рµ Р·Р°РїСЂРµС‚РЅСѓСЋ РґР»РёРЅСѓ СЃС‚СЂРѕРєРё: ";
     int zapret = 0;
     std::cin >> zapret;
 
@@ -31,7 +31,7 @@ int main()
 
     do
     {
-        std::cout << "Введите слово: ";
+        std::cout << "Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ: ";
         std::cin >> current_str;
 
         try
@@ -40,16 +40,16 @@ int main()
         }
         catch (const BadLengthException& ex)
         {
-            std::cout << ex.what() << " До свидания" << std::endl;
+            std::cout << ex.what() << " Р”Рѕ СЃРІРёРґР°РЅРёСЏ" << std::endl;
             return static_cast<int>(ErrorCode::BadLengthExceptionErrorCode);
         }
         catch (...)
         {
-            std::cout << "Неизвестная ошибка" << std::endl;
+            std::cout << "РќРµРёР·РІРµСЃС‚РЅР°СЏ РѕС€РёР±РєР°" << std::endl;
             return static_cast<int>(ErrorCode::UnknownErrorCode);
         }
 
-        std::cout << "Длина слова \"" << current_str << "\" равна " << current_length << std::endl;
+        std::cout << "Р”Р»РёРЅР° СЃР»РѕРІР° \"" << current_str << "\" СЂР°РІРЅР° " << current_length << std::endl;
     } while (true);
 
     return static_cast<int>(ErrorCode::Succses);
