@@ -1,2 +1,2 @@
-*.h diff
-*.cpp diff
+*.h text working-tree-encoding=UTF-16 eol=CRLF
+*.cpp text working-tree-encoding=UTF-16 eol=CRLF
