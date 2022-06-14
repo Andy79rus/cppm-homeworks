@@ -2,7 +2,7 @@
 #include <Windows.h>
 #include <cstdio>
 
- enum class ErrorCode { Success = 0, BadLengthExceptionErrorCode, UnknownErrorCode };
+enum class ErrorCode { Success = 0, BadLengthExceptionErrorCode, UnknownErrorCode };
 
 class BadLengthException : public std::exception
 {
