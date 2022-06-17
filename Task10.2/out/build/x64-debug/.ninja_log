@@ -1,0 +1,13 @@
+# ninja log v5
+102	1284	6771788979512436	CMakeFiles/Task10.2.dir/Right_Triangle.cpp.obj	ae3ee04c9f4f0a47
+0	1308	6771788979512436	CMakeFiles/Task10.2.dir/Figure.cpp.obj	fde0ae58038f56fc
+9	1309	6771788979660114	CMakeFiles/Task10.2.dir/Equilateral_Triangle.cpp.obj	489b8d886292ca41
+92	1310	6771788979660114	CMakeFiles/Task10.2.dir/Rhombus.cpp.obj	47bac3927a194fcc
+60	1311	6771788979672188	CMakeFiles/Task10.2.dir/Quadrangle.cpp.obj	6972734599259139
+112	1312	6771788979738515	CMakeFiles/Task10.2.dir/Square.cpp.obj	5592e66147bff0d4
+28	1313	6771788979844732	CMakeFiles/Task10.2.dir/Parallelogram.cpp.obj	59cc9cff2230b47c
+70	1313	6771788979871846	CMakeFiles/Task10.2.dir/Rectangle.cpp.obj	1920d5d2ebcc3008
+48	1314	6771788979887742	CMakeFiles/Task10.2.dir/Isosceles_Triangle.cpp.obj	f286601c71a3245
+81	1681	6771788983577487	CMakeFiles/Task10.2.dir/Task10.2.cpp.obj	33a8739c353617eb
+1293	1847	6771788985228293	CMakeFiles/Task10.2.dir/Triangle.cpp.obj	18ed9c039f69c71e
+1848	2282	6771788989481406	Task10.2.exe	6f66a2edc8ed359f
