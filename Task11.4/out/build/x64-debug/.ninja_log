@@ -1,0 +1,15 @@
+# ninja log v5
+57	689	6777038107027152	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Parallelogram.cpp.obj	f8fe4f0dd70af227
+43	710	6777038107189318	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Quadrangle.cpp.obj	9a1b42d8463da3f8
+103	711	6777038107189318	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Right_Triangle.cpp.obj	e9f3d57ce3e7936d
+90	715	6777038107268387	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Rhombus.cpp.obj	196fa8cea768c1f7
+22	716	6777038107416069	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Isosceles_Triangle.cpp.obj	187aac6b24c5dfff
+74	723	6777038107531591	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Rectangle.cpp.obj	16892155b617714d
+11	735	6777038107631155	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Equilateral_Triangle.cpp.obj	ddeab2318163e03b
+32	757	6777038107836650	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Figure.cpp.obj	b087a001551eeb20
+119	765	6777038107976710	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Square.cpp.obj	3210284431a86ba8
+696	1041	6777038110716979	FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir/Triangle.cpp.obj	a9f0a29a3692e524
+1	1060	6777038110860063	CMakeFiles/FigureHierarchyConsole.dir/FigureHierarchyConsole.cpp.obj	eb9bbe0afeed36f8
+1041	1432	6777038114417418	FigureHierarchyDynamicLib/FigureHierarchyDynamicLib.dll	efa3013266a460e8
+1041	1432	6777038114417418	FigureHierarchyDynamicLib/FigureHierarchyDynamicLib.lib	efa3013266a460e8
+1432	1775	6777038117962430	FigureHierarchyConsole.exe	f24826e63dae3571

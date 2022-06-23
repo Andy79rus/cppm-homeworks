@@ -1,0 +1,102 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "FigureHierarchyDynamicLib",
+					"jsonFile" : "directory-FigureHierarchyDynamicLib-Debug-66e23aa5138d0d3eb8c0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "FigureHierarchyDynamicLib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Task11.4",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "FigureHierarchyDynamicLib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FigureHierarchyConsole::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FigureHierarchyConsole-Debug-559ec296e2104f728d16.json",
+					"name" : "FigureHierarchyConsole",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "FigureHierarchyDynamicLib::@20437598d8abc8fc2d64",
+					"jsonFile" : "target-FigureHierarchyDynamicLib-Debug-6270ef358a493ce0d51c.json",
+					"name" : "FigureHierarchyDynamicLib",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/\u0423\u0447\u0435\u0431\u0430/cppm-homeworks/Task11.4/out/build/x64-debug",
+		"source" : "C:/\u0423\u0447\u0435\u0431\u0430/cppm-homeworks/Task11.4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
