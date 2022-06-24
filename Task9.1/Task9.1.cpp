@@ -13,14 +13,40 @@ public:
 		denominator_ = denominator;
 	}
 
-	double FracToDecimal() { return static_cast<double>(numerator_) / denominator_; }
+	double FracToDecimal()
+		{ 
+			return static_cast<double>(numerator_) / denominator_;
+		}
 
-	bool operator==(Fraction other) { return FracToDecimal() == other.FracToDecimal(); }
-	bool operator!=(Fraction other) { return !(*this == other); }
-	bool operator>(Fraction other) { return FracToDecimal() > other.FracToDecimal(); }
-	bool operator<(Fraction other) { return other > *this; }
-	bool operator>=(Fraction other) { return !(*this < other); }
-	bool operator<=(Fraction other) { return !(*this > other); }
+	bool operator==(Fraction other)
+		{
+			return FracToDecimal() == other.FracToDecimal();
+		}
+
+	bool operator!=(Fraction other)
+		{
+			return !(*this == other);
+		}
+
+	bool operator>(Fraction other)
+		{
+			return FracToDecimal() > other.FracToDecimal();
+		}
+
+	bool operator<(Fraction other)
+		{
+			return other > *this;
+		}
+
+	bool operator>=(Fraction other)
+		{
+			return !(*this < other);
+		}
+
+	bool operator<=(Fraction other)
+		{
+			return !(*this > other);
+		}
 };
 
 int main()
