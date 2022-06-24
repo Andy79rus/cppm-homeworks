@@ -8,3 +8,4 @@ file(GLOB SOURCES
 )
 
 add_library(FigureHierarchyDynamicLib SHARED ${SOURCES})
+target_include_directories(FigureHierarchyDynamicLib PUBLIC ../FigureHierarchyDynamicLib)

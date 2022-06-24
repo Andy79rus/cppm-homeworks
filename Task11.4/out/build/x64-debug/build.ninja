@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_FigureHierarchyConsole: phony || cmake_o
 
 build CMakeFiles\FigureHierarchyConsole.dir\FigureHierarchyConsole.cpp.obj: CXX_COMPILER__FigureHierarchyConsole_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyConsole.cpp || cmake_object_order_depends_target_FigureHierarchyConsole
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = CMakeFiles\FigureHierarchyConsole.dir
   OBJECT_FILE_DIR = CMakeFiles\FigureHierarchyConsole.dir
   TARGET_COMPILE_PDB = CMakeFiles\FigureHierarchyConsole.dir\
@@ -117,7 +117,7 @@ build cmake_object_order_depends_target_FigureHierarchyDynamicLib: phony || Figu
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Equilateral_Triangle.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Equilateral_Triangle.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -126,7 +126,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Equilat
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Figure.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Figure.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -135,7 +135,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Figure.
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Isosceles_Triangle.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Isosceles_Triangle.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -144,7 +144,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Isoscel
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Parallelogram.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Parallelogram.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -153,7 +153,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Paralle
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Quadrangle.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Quadrangle.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -162,7 +162,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Quadran
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Rectangle.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Rectangle.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -171,7 +171,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Rectang
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Rhombus.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Rhombus.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -180,7 +180,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Rhombus
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Right_Triangle.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Right_Triangle.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -189,7 +189,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Right_T
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Square.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Square.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
@@ -198,7 +198,7 @@ build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Square.
 build FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\Triangle.cpp.obj: CXX_COMPILER__FigureHierarchyDynamicLib_Debug C$:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\Triangle.cpp || cmake_object_order_depends_target_FigureHierarchyDynamicLib
   DEFINES = -DFigureHierarchyDynamicLib_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib
+  INCLUDES = -IC:\Учеба\cppm-homeworks\Task11.4\FigureHierarchyDynamicLib\..\FigureHierarchyDynamicLib
   OBJECT_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   OBJECT_FILE_DIR = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir
   TARGET_COMPILE_PDB = FigureHierarchyDynamicLib\CMakeFiles\FigureHierarchyDynamicLib.dir\
