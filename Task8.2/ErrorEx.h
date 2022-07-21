@@ -13,42 +13,7 @@ protected:
 	void set_error_code(ErrorCode);
 
 public:
-	FigureHierarhyException();
+	FigureHierarhyException(ErrorCode ErrorType);
 	ErrorCode get_error_code() const;
-	const char* what() const override;
-};
-
-class NonPositiveSideException : public FigureHierarhyException
-{
-public:
-	NonPositiveSideException();
-	const char* what() const override;
-};
-
-class TriangleSidesException : public FigureHierarhyException
-{
-public:
-	TriangleSidesException();
-	const char* what() const override;
-};
-
-class AnglesSumNot180Exception : public FigureHierarhyException
-{
-public:
-	AnglesSumNot180Exception();
-	const char* what() const override;
-};
-
-class AnglesSumNot360Exception : public FigureHierarhyException
-{
-public:
-	AnglesSumNot360Exception();
-	const char* what() const override;
-};
-
-class UnknownException : public FigureHierarhyException
-{
-public:
-	UnknownException();
 	const char* what() const override;
 };
