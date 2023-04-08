@@ -1,6 +1,5 @@
 C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/CMakeFiles/FigureHierarchyConsole.dir
-C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/CMakeFiles/ALL_BUILD.dir
+C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/CMakeFiles/ZERO_CHECK.dir
 C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/FigureHierarchyDynamicLib/CMakeFiles/FigureHierarchyDynamicLib.dir
-C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/FigureHierarchyDynamicLib/CMakeFiles/edit_cache.dir
-C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/FigureHierarchyDynamicLib/CMakeFiles/rebuild_cache.dir
+C:/Учеба/cppm-homeworks/Task11.4/out/build/x64-debug/FigureHierarchyDynamicLib/CMakeFiles/ALL_BUILD.dir

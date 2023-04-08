@@ -7,10 +7,8 @@ class Address
 {
 public:
 
-	Address()
-	{
-		Address("", "", 0, 0);
-	}
+	Address() : Address("", "", 0, 0)
+	{}
 
 	Address(std::string c, std::string s, int h, int f)
 	{
